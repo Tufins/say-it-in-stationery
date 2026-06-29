@@ -436,8 +436,22 @@
    RESPONSIVE
    ============================================ */
 @media (max-width: 768px) {
-  .hero h1 { font-size: 2.2rem; }
-  .about-grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 2rem; }
   .navbar-links { display: none; }
+  .about-grid { grid-template-columns: 1fr; }
   .about-stats { gap: 16px; }
+  .about-image {
+    padding: 20px;
+    font-size: 1rem;
+    min-height: auto;
+  }
+  .products-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero { padding: 100px 20px 60px; }
+  .section { padding: 50px 16px; }
 }
