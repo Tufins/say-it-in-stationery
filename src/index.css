@@ -1,0 +1,107 @@
+/* ============================================
+   🎨 COLOR PALETTE — Change colors here!
+   ============================================ */
+:root {
+  --primary:     #f4a7b9;   /* 🌸 Main pink */
+  --primary-dark:#e8899e;   /* 🌸 Darker pink (hover effects) */
+  --secondary:   #fde8ee;   /* 🍬 Light pink background */
+  --accent:      #f9c8d4;   /* 🎀 Accent pink */
+  --cream:       #fff8f4;   /* 🤍 Cream/off-white background */
+  --brown:       #c4956a;   /* 🤎 Warm brown (logo border color) */
+  --text-dark:   #3d2b1f;   /* 🖤 Dark text */
+  --text-mid:    #7a5c4f;   /* 📝 Medium text */
+  --text-light:  #b08a7a;   /* 🩶 Light/muted text */
+  --white:       #ffffff;
+  --shadow:      rgba(244, 167, 185, 0.25);
+}
+
+/* ============================================
+   GLOBAL RESET & BASE
+   ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--cream);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ============================================
+   REUSABLE CLASSES
+   ============================================ */
+.section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-light);
+  margin-bottom: 50px;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px var(--shadow);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: var(--white);
+  transform: translateY(-2px);
+}
